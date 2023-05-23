@@ -14,7 +14,7 @@ function Panel({
   subtitle?: string;
   href?: string;
 }) {
-  const rootClasses = 'h-[88px] w-[360px] rounded-xl bg-[#27272A]';
+  const rootClasses = 'h-[88px] lg:w-[360px] w-[160px] rounded-xl bg-[#27272A]';
 
   const inner = (
     <div className="flex h-full items-center gap-4 p-6">
@@ -37,11 +37,11 @@ function Panel({
 
 export default function Downloads() {
   return (
-    <div className="text-[#F0F0F2]">
+    <div className="min-h-screen text-[#F0F0F2]">
       <div className="mb-16 mt-[-25px] text-center">
         <h1 className="text-6xl font-extrabold text-white">Downloads</h1>
       </div>
-      <div className="flex w-full justify-center gap-14">
+      <div className="flex w-full justify-center gap-14 sm:flex-col md:flex-row lg:flex-row">
         <div className="flex flex-col gap-6">
           <h2 className="text-[30px] font-bold tracking-wide">Desktop</h2>
           <Panel
